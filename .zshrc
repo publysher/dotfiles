@@ -32,3 +32,13 @@ precmd() {
 
 	PROMPT="${__newline}${__user}@${__host} ${__cwd} ${vcs_info_msg_0_}${__newline}${__hash} "
 }
+
+# load API keys etc
+if [[ -f ~/.secrets ]] 
+then
+	source ~/.secrets
+fi
+
+# to make sure ansible/hvac work nice
+export OBJC_DISABLE_INITIALIZE_FORK_SAFETY=YES
+
