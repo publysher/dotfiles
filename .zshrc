@@ -10,6 +10,9 @@ fi
 autoload -Uz vcs_info
 autoload -U colors && colors
 
+# turn off globbing warnings
+setopt rm_star_silent
+
 precmd() {
 	local __user="%n"
 	local __host="%m"
