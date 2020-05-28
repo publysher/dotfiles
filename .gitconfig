@@ -18,7 +18,7 @@
 	change-commits = "!f() { VAR=$1; OLD=$2; NEW=$3; shift 3; git filter-branch --env-filter \"if [[ $`echo $VAR` = \\\"$OLD\\\" ]]; then export $VAR=\\\"$NEW\\\"; fi\" $@; }; f "
 	ishow = "! bash -c 'git show --pretty=\"format:\"  --name-only \"$(git merge-base \"$(git rev-parse --abbrev-ref HEAD)\" master)..HEAD\" | grep -v \"^$\" | sort | uniq' -"
 	up = pull --rebase --autostash
-
+	cbr = "! git co master ; git for-each-ref --format '%(refname:short)' refs/heads/ | grep -v master | xargs git branch -D"
 
 [color]
 	ui = true
