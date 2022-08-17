@@ -27,7 +27,7 @@
 	branch = auto
 
 [push]
-	default = matching
+	default = simple
 
 [url "git@github.com:door2doc"]
 	insteadOf = https://github.com/door2doc
