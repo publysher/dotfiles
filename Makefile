@@ -2,7 +2,7 @@ PACKAGES=zsh-completions
 
 
 .PHONY:	all
-all:	brew-packages ~/.zshrc ~/.gitconfig ~/.vimrc
+all:	brew-packages ~/.zshrc ~/.gitconfig ~/.vimrc ~/.ssh/config
 
 .PHONY:	brew-packages
 brew-packages:	

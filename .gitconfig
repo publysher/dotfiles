@@ -29,14 +29,18 @@
 [push]
 	default = simple
 
-[fetch]
-	prune = true
+[init]
+	defaultBranch = master
 
 [url "git@github.com:door2doc"]
 	insteadOf = https://github.com/door2doc
 
-[url "ssh://git@gitlab.noumenadigital.com"]
-	insteadOf = https://gitlab.noumenadigital.com
+[url "git@noumenadigital.github.com:noumenadigital"]
+	insteadOf = git@github.com:noumenadigital
 
-[init]
-	defaultBranch = master
+[fetch]
+	prune = true
+
+[rebase]
+	autosquash = true
+
