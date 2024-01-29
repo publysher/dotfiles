@@ -35,8 +35,11 @@
 [url "git@github.com:door2doc"]
 	insteadOf = https://github.com/door2doc
 
-[url "git@noumenadigital.github.com:noumenadigital"]
+[url "git@noumenadigital.github.com:NoumenaDigital"]
 	insteadOf = git@github.com:noumenadigital
+
+[url "git@noumenadigital.github.com:NoumenaDigital"]
+	insteadOf = git@github.com:NoumenaDigital
 
 [fetch]
 	prune = true
